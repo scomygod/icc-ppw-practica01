@@ -23,7 +23,8 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "baseHref": "/icc-ppw-practica01/"
           },
           "configurations": {
             "production": {
