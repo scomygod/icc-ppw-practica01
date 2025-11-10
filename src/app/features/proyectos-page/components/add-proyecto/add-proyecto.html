@@ -1,7 +1,5 @@
-<h1>Proyectos</h1>
-
-<section>
-  <div>
+<p>add-proyecto works!</p>,
+<div>
     <h3>Agregar Proyecto</h3>
     <h4>Proyecto a Agregar {{ name() }}</h4>
     <input
@@ -22,23 +20,3 @@
 
     <button type="submit" (click)="addProyecto()">Agregar</button>
   </div>
-
-  <div>
-    <!-- <li>Proyecto 1</li>
-    <li>Proyecto 2</li> -->
-
-    <h3>Listado</h3>
-    <ul>
-      @for(proyecto of proyectos(); track $index){
-      <li>{{ proyecto.nombre }} - {{ proyecto.descripcion }}</li>
-      }
-    </ul>
-  </div>
-
-  <listado-proyectos
-  listName="Listado de Proyectos"
-  [proyectos]="proyectos()"
-  ></listado-proyectos>
-
-  <ul></ul>
-</section>
