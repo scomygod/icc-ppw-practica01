@@ -3,11 +3,11 @@ import { HomePage } from './features/module/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectosPage } from './features/proyectos-page/proyectos-page';
 import { ProyectosDosPage } from './features/proyectos-dos-page/proyectos-dos-page';
-import { FormularioPage } from './features/formularios/formularios-page';
+import { FormularioPage } from './features/formularios/pages/FormularioPage/formularios-page';
 
 export const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomePage,
   },
   {
@@ -22,8 +22,18 @@ export const routes: Routes = [
     path: 'proyectos-dos-page',
     component: ProyectosDosPage,
   },
+  // {
+  //   path: 'formularios-page',
+  //   component: FormularioPage,
+  // },
+  // {
+  //   path: 'formulario',
+  //   loadChildren: () =>
+  //     import('./features/formularios/pages/formularios-routes').then((m) => m.formulariosRoutes),
+  // },
   {
-    path: 'formularios-page',
-    component: FormularioPage,
-  }
+    path: 'formulario',
+    loadChildren: () =>
+      import('./features/formularios/pages/formularios-routes').then((m) => m.formulariosRoutes),
+  },
 ];
